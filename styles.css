@@ -208,6 +208,81 @@ main {
     }
 }
 
+.carousel-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-container h3 {
+    font-family: "Girassol", sans-serif;
+    font-size: 2rem;
+    color: #dbdbdb;
+    margin-bottom: 20px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    width: 500%;
+    animation: carousel-slide 40s infinite linear;
+}
+
+.carousel:hover {
+    animation-play-state: paused;
+}
+
+.carousel-item {
+    width: 20%;
+    flex-shrink: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #4c5fb4;
+    max-height: 300px;
+}
+
+@keyframes carousel-slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-20%);
+    }
+
+    40% {
+        transform: translateX(-40%);
+    }
+
+    60% {
+        transform: translateX(-60%);
+    }
+
+    80% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 footer {
     grid-area: footer;
     background-color: #17b5f983;
