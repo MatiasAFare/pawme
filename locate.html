@@ -15,17 +15,21 @@
     <header id="header-nav">
         <nav>
             <h1 id="nav-title">PAWME</h1>
+            <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </nav>
         <div id="logo-nav"><img src="images/Pawme.png" alt="Logo pawme"></div>
     </header>
-
-    <aside id="asideOptions">
+    <aside id="asideOptions" class="nav-menu">
         <ul>
             <li id="li-nav"><a href="index.html">Home</a></li>
             <li id="li-nav"><a href="locate.html">Locate</a></li>
+            <li id="li-nav"><a href="shopping.html">Chips</a></li>
             <li id="li-nav"><a href="about.html">About us</a></li>
             <li id="li-nav"><a href="contact.html">Contact</a></li>
-
         </ul>
     </aside>
 
@@ -42,9 +46,13 @@
                     </div>
                 </form>
 
-                <iframe id="google-map" width="100%" height="450" style="border:0; border-radius: 10px;" loading="lazy"
-                    allowfullscreen src="https://maps.google.com/maps?q=BuenosAires,Argentina&output=embed">
-                </iframe>
+                <div id="map-wrapper" style="position: relative; width: 100%; height: 450px;">
+                    <iframe id="google-map" width="100%" height="450" style="border:0; border-radius: 10px;"
+                        loading="lazy" allowfullscreen
+                        src="https://maps.google.com/maps?q=BuenosAires,Argentina&output=embed&t=roadmap&style=feature:all|element:labels.text.fill|color:0xffffff&style=feature:all|element:labels.text.stroke|color:0x000000&style=feature:administrative|element:geometry.fill|color:0x000000&style=feature:landscape|element:all|color:0x08304b&style=feature:road.highway|element:geometry.fill|color:0x000000&style=feature:road.arterial|element:geometry.fill|color:0x000000&style=feature:road.local|element:geometry|color:0x000000&style=feature:water|element:all|color:0x021019">
+                    </iframe>
+                    <div id="location-circle"></div>
+                </div>
             </div>
 
 
@@ -56,6 +64,8 @@
         <h2>©Pawme was created by pet owners for pet owners in need. </h2>
         <img src="./images/petlove-removebg-preview.png"></img>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

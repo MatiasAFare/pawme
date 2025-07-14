@@ -1,0 +1,24 @@
+# Archivos de testing y desarrollo
+test-*.html
+test-*.js
+test-*.css
+
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor específico
+.vscode/settings.json
+.idea/
+
+# Node modules si se usa
+node_modules/
+
+# Archivos de backup
+*.bak
+*.backup

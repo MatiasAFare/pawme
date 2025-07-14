@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+    <title>Pawme - Chips for Pets</title>
+</head>
+
+<body class="shopping-page">
+    <header id="header-nav">
+        <nav>
+            <h1 id="nav-title">PAWME</h1>
+            <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+        <div id="logo-nav"><img src="images/Pawme.png" alt="Logo pawme"></div>
+        <div id="cart-summary">
+            <button id="cart-toggle">
+                <div class="cart-icon-container">
+                    <svg class="cart-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                    </svg>
+                    <span id="cart-count" class="cart-badge">0</span>
+                </div>
+            </button>
+        </div>
+        <div id="logo-nav"><img src="images/Pawme.png" alt="Logo pawme"></div>
+    </header>
+
+    <aside id="asideOptions" class="nav-menu">
+        <ul>
+            <li id="li-nav"><a href="index.html">Home</a></li>
+            <li id="li-nav"><a href="locate.html">Locate</a></li>
+            <li id="li-nav"><a href="shopping.html">Chips</a></li>
+            <li id="li-nav"><a href="about.html">About us</a></li>
+            <li id="li-nav"><a href="contact.html">Contact</a></li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <section id="mainContentShopping">
+            <div id="shopping-header">
+                <h2>Pet Identification Chips</h2>
+                <p>Keep your beloved pets safe with our premium GPS and identification chips</p>
+
+                <!-- Barra de busqueda -->
+                <div class="search-container">
+                    <input type="text" id="product-search" placeholder="Search chips..." class="search-input">
+                    <button type="button" id="clear-search" class="clear-search-btn">Clear</button>
+                </div>
+            </div>
+
+            <div id="cart-sidebar" class="cart-hidden">
+                <div id="cart-header">
+                    <h3>Shopping Cart</h3>
+                    <button id="close-cart">✕</button>
+                </div>
+                <div id="cart-items"></div>
+                <div id="cart-footer">
+                    <div id="cart-total">Total: $<span id="total-amount">0.00</span></div>
+                    <button id="checkout-btn">Checkout</button>
+                    <button id="clear-cart">Clear Cart</button>
+                </div>
+            </div>
+
+            <div id="products-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>©Pawme was created by pet owners for pet owners in need.</h2>
+        <img src="./images/petlove-removebg-preview.png" alt="Pet Love">
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="api-demo.js"></script>
+    <script src="shopping.js"></script>
+
+</body>
+
+</html>
